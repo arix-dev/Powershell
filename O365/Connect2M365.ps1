@@ -19,7 +19,7 @@ Working OS:	    Windows, Linux
     Write-Host "`t2. Sharepoint Online"
     Write-Host "`t3. Teams Admin"
     Write-Host "`t4. Security & Compliance Admin"
-    Write-Host "`t5. Azure AD"
+    Write-Host "`t5. Entra"
     Write-Host "`tQ. Quit"
     Write-Host "=====================================================" -BackgroundColor Blue
     $choice = Read-Host "`nEnter Choice"
@@ -30,10 +30,10 @@ Working OS:	    Windows, Linux
        }
        '2'{
          try {
-            $tenant = Read-Host "`nEnter Tenant (Default: royalcollegecanada)"
+            $tenant = Read-Host "`nEnter Tenant"
             if ([string]::IsNullOrWhiteSpace($tenant))
             {
-            $tenant = 'royalcollegecanada'
+            $tenant = ''
              }
             Connect-SPOService -Url "https://${tenant}-admin.sharepoint.com"
          }
