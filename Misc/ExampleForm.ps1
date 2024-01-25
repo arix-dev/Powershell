@@ -4,7 +4,6 @@
 	 Created on:   	***
 	 Created by:   	Andrew Rix
 	 Organization: 	Rixworx Solutions Inc
-	 Working OS:	Windows
 	===========================================================================
 	.DESCRIPTION
 		Example of Windows Forms in Powershell

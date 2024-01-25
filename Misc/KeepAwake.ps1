@@ -4,10 +4,9 @@
 	 Created on:   	***
 	 Created by:   	Andrew Rix
 	 Organization: 	Rixworx Solutions Inc
-	 Working OS:	  Windows
 	===========================================================================
 	.DESCRIPTION
-		Sends F15 key every minute to keep screen alive
+		Sends F15 key every minute to keep screen alive on Windows
 #>
 
 $wsh = New-Object -ComObject WScript.Shell
